@@ -1,0 +1,173 @@
+𝙙𝙚𝙢𝙤𝙨𝙩𝙧𝙖𝙩𝙚 𝙚𝙖𝙘𝙝 𝙩𝙤𝙥𝙞𝙘 𝙤𝙛 𝙘𝙝𝙖𝙥𝙩𝙚𝙧 3
+
+𝙞𝙛 𝙨𝙩𝙖𝙩𝙚𝙢𝙚𝙣𝙩 𝙚𝙭𝙖𝙢𝙥𝙡𝙚
+1)write a program to check weather two number are equal or not equal
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x = 10;
+    int y = 20;
+
+    // Check if x is equal to 10
+    if (x == 10)
+    {
+        cout << "x is equal to 10" << endl;
+    }
+
+    // Check if x is not equal to y
+    if (x != y)
+    {
+        cout << "x is not equal to y" << endl;
+    }
+
+    return 0;
+}
+
+2 Write  a program to print absolute vlaue of a number entered by user. E.g.-
+INPUT: 1        OUTPUT: 1
+INPUT: -1        OUTPUT: 1
+#include <iostream>
+int main()
+{
+    using namespace std;
+
+    int x;
+    cout<<"Enter a number"<<endl;
+    cin>>x;
+    if(x<0)
+    {
+        x = x*(-1);
+    }
+
+    cout<<"Absolute value is "<<x<<endl;
+
+
+    return 0;
+}			
+
+
+3) Program to print positive number entered by the user
+and If the user enters a negative number, it is skipped
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  int number;
+
+  cout << "Enter an integer: ";
+  cin >> number;
+
+  // checks if the number is positive
+  if (number > 0) {
+    cout << "You entered a positive integer: " << number << endl;
+  }
+
+  cout << "This statement is always executed.";
+
+  return 0;
+}
+
+𝙞𝙛 𝙚𝙡𝙨𝙚 𝙨𝙩𝙖𝙩𝙚𝙢𝙚𝙣𝙩
+
+1) Take values of length and breadth of a rectangle from user and check if it is square or not.
+#include <iostream>
+int main()
+{
+    using namespace std;
+
+    int length,breadth;
+    cout<<"Enter length"<<endl;
+    cin>>length;
+    cout<<"Enter breadth"<<endl;
+    cin>>breadth;
+
+    if(length==breadth)
+    {
+        cout<<"It is a square"<<endl;
+    }
+    else
+    {
+        cout<<"It is a rectangle"<<endl;
+    }
+
+    return 0;
+}	
+
+2) Program to check whether an integer is positive or negative
+// This program considers 0 as a positive number
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+  int number;
+
+  cout << "Enter an integer: ";
+  cin >> number;
+
+  if (number >= 0) {
+    cout << "You entered a positive integer: " << number << endl;
+  }
+  else {
+    cout << "You entered a negative integer: " << number << endl;
+  }
+
+  cout << "This line is always printed.";
+
+  return 0;
+}
+
+	𝙢𝙪𝙡𝙩𝙞 𝙬𝙖𝙮 𝙞𝙛 𝙚𝙡𝙨𝙚 𝙨𝙩𝙖𝙩𝙚𝙢𝙖𝙣𝙩
+
+							
+1) // Program to check whether an integer is positiv
+#include <iostream>
+using namespace std;
+int main() {
+  int number;
+  cout << "Enter an integer: ";
+  cin >> number;
+  if (number > 0) {
+    cout << "You entered a positive integer: " <<
+  }
+  else if (number < 0) {
+    cout << "You entered a negative integer: " <<
+  }
+  else {
+    cout << "You entered 0." << endl;
+  }
+  cout << "This line is always printed.";
+  return 0;
+}
+    𝙣𝙚𝙨𝙩𝙚𝙙 𝙞𝙛 𝙨𝙩𝙖𝙩𝙚𝙢𝙖𝙣𝙩
+1)  // C++ program to find if an integer is positive
+// using nested if statements
+#include <iostream>
+using namespace std;
+int main() {
+  int num;
+  cout << "Enter an integer: ";
+   cin >> num;
+  // outer if condition
+  if (num != 0) {
+    // inner if condition
+    if (num > 0) {
+      cout << "The number is positive." << endl;
+    }
+    // inner else condition
+    else {
+      cout << "The number is negative." << endl;
+    }
+  }
+  // outer else condition
+  else {
+    cout << "The number is 0 and it is neither p
+  }
+  cout << "This line is always printed." << endl
+  return 0;
+}
