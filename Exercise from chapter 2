@@ -1,0 +1,109 @@
+EXERCISE FROM CHAPTER 2
+
+1) Write a statement (or comment) to accomplish each of the following:
+State that a program calculates the product of three integers.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+//Declare the variables x, y, z and result to be of type int.
+    int x, y, z;
+    int product;
+//Prompt the user to enter three integers.
+    cout <<"Enter three integers: ";
+//Read three integers from the keyboard and store them in the variables x, y and z.
+    cin >> x >> y >> z;
+/*Compute the product of the three integers contained in variables x, y and z, and assign the result to the variable result.
+    product = x * y * z;
+
+// Return a value from main indicating that the program terminated successfully.
+   cout << "Product of the three integers = " << product;
+
+    return 0;
+}
+
+2. Write a program that accepts two integers and display the sum, difference, product and division of the two numbers. The program should also state the greater and smaller number.
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int num1, num2;
+    cout<<"Please enter two integers: "<<endl;
+    cin>>num1>>num2;
+
+    cout<<"sum="<<num1+num2<<endl;
+    cout<<"Difference="<<num1 - num2<<endl;
+    cout<<"Product="<<num1 * num2<<endl;
+    cout<<"Division="<< num1 / num2<<endl;
+
+    if (num1 > num2)
+        printf("%d is greater than %d\n", num1, num2);
+    else
+        printf("%d is greater than %d\n", num2, num1);
+
+    return 0;
+}
+
+3. Write a program that calculate and display the circumference of a circle. (C = 2∏r )
+#include<iostream>
+using namespace std;
+
+int main() {
+
+   int rad;
+   float PI = 3.14, area, ci;
+
+   cout<<"Enter radius of circle: "<<endl;
+   cin>>rad;
+
+   area = PI * rad * rad;
+   cout<<"area="<<area<<endl;
+
+   ci = 2 * PI * rad;
+   cout<<"Circumference :"<<ci;
+   return 0;
+
+
+4. Write a program to solve a quadratic equation. 
+Hint:       y = ax2 + bx + c
+                root = (-b ± sqrt(b2 -4ac)) /  2a
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double a, b, c, root1, root2, discriminant;
+
+    printf("Enter the coefficients a, b and c: ");
+    scanf("%lf %lf %lf", &a, &b, &c);
+
+    discriminant = b*b - 4*a*c;
+
+    // condition for real and different roots
+    if (discriminant > 0)
+    {
+        root1 = (-b + sqrt(discriminant)) / (2*a);
+        root2 = (-b - sqrt(discriminant)) / (2*a);
+
+        printf("Root 1 = %.2lf and Root 2 = %.2lf", root1, root2);
+    }
+
+    //condition for real and equal roots
+    else if (discriminant == 0)
+    {
+        root1 = root2 = -b / (2*a);
+
+        printf("Root 1 = Root 2 = %.2lf;", root1);
+    }
+
+    // if roots are not real
+    else
+    {
+        printf("Root 1 = %.2lf+%.2lfi and Root 2 = %.2f-%.2fi", -b/(2*a), sqrt(-discriminant)/(2*a), -b/(2*a), sqrt(-discriminant)/(2*a));
+    }
+
+    return 0;
+}
+
