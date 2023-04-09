@@ -1,0 +1,135 @@
+DEMONSTRATE EACH TOPIC OF CHAPTER 2
+
+
+Comment
+Comments Explain programs to other programmers Ignored by compiler
+Improve program readability Ignored by compiler
+
+Single line commente
+Begin with //
+Example
+//allows program to output data to the screen.
+Multi-line comment
+Start with /*
+End with */
+
+
+Preprocecessor directive 
+ 
+Processed by preprocessor before compiling
+Begin with #
+Example
+#include <iostream>
+Tells preprocessor to include the input/output stream header file <iostream>
+White spaces
+Blank lines, space characters and tabs
+Delimiter, used to make programs easier to read
+Extra spaces are ignored by the compiler
+
+
+Function 
+ Function main A part of every C++ program
+Exactly one function in a program must be main
+main is a Keyword.
+Keyword : A word in code that is reserved by C++ for a specific use.
+Header of function main : int main( )
+Body is delimited by braces ({ })
+
+
+Statement 
+Statements Instruct the program to perform an action
+All statements end with a semicolon (;)
+Examples :
+return 0;
+std::cout << “Welcome to C++!\n ”;
+
+
+return statement 
+return Statement One of several means to exit a function
+When used at the end of main
+The value 0 indicates the program terminated successfully
+Example
+return 0;
+
+Output statement 
+Output Statement (1) std::cout << “Welcome to C++!\n”; std::cout
+Standard output stream object.
+Defined in input/output stream header file <iostream>
+We are using a name (cout) that belongs to “namespace” std.
+Normally outputs to computer screen.
+Stream insertion operator <<
+Value to right (right operand) inserted into left operand.
+The string of characters contained between “ ” after the operator << shows on computer screen
+
+ Output Statement (2) Escape character : backslash : "\"
+Escape sequence : A character preceded by backslash (\)
+Indicates “special” character output
+Examples :
+"\n"
+Newline. Cursor moves to beginning of next line on the screen
+“\t”
+Horizontal tab. Move the screen cursor to the next tab stop
+
+
+ Declaration of Variables 
+Can Declare each variable on a separate line.
+int integer1;
+int integer2;
+int sum;
+Can declare several variables of same type in one declaration.
+Comma-separated list
+int integer1, integer2, sum;
+
+
+Assign Value to Variables
+Assignment operator =
+Assigns value on right to variable on left
+Binary operator (two operands)
+Assign a value after declaration
+int integer1; //declaration
+integer1 = 10; //assignment
+Declare and assign a value at the same time.
+int integer2 = 20;
+
+Input stream object std::cin from <iostream>
+Usually connected to keyboard
+Stream extraction operator >>
+Waits for user to input value, press Enter (Return) key
+Stores value in variable to right of operator
+Converts value to variable data type
+Example
+int number1;
+std::cin >> number1;
+Reads an integer typed at the keyboard
+Stores the integer in variable number1
+
+ Constant variables Declared using the const qualifier
+Also called named constants or read-only variables
+Must be initialized with a constant expression when they are declared and cannot be modified thereafter
+Example: const int size = 5;
+
+Arithmetic  operater
++ : Addition - : Subtraction
+* : Multiplication
+/ : Division
+Integer division truncates remainder
+7 / 5 evaluates to 1
+% : Modulus operator returns remainder
+7 % 5 evaluates to 2
+Attempting to use the modulus operator (%) with
+non-integer operands is a compilation error.
+
+
+ Arithmetic (2) Straight-line form Grouping sub-expressions
+Required for arithmetic expressions in C++
+All constants, variables and operators appear in a straight line
+Grouping sub-expressions
+Parentheses are used in C++ expressions to group sub-expressions
+Same manner as in algebraic expressions
+Example
+a * ( b + c )
+Multiple a times the quantity b + c
+
+Rules of operator precedence
+Operators in parentheses evaluated first
+
