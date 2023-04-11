@@ -1,0 +1,111 @@
+𝙜𝙤𝙩𝙤 𝙨𝙩𝙖𝙩𝙚𝙢𝙖𝙣𝙩
+𝙨𝙮𝙣𝙩𝙖𝙭:
+goto label;
+... .. ...
+... .. ...
+... .. ...
+label: 
+statement;
+... .. ...
+𝙚𝙭𝙖𝙢𝙥𝙡𝙚 1
+goto Statement
+// This program calculates the average of numbers entered by the user.
+// If the user enters a negative number, it ignores the number and 
+// calculates the average number entered before it.
+
+# include <iostream>
+using namespace std;
+
+int main()
+{
+    float num, average, sum = 0.0;
+    int i, n;
+
+    cout << "Maximum number of inputs: ";
+    cin >> n;
+
+    for(i = 1; i <= n; ++i)
+    {
+        cout << "Enter n" << i << ": ";
+        cin >> num;
+        
+        if(num < 0.0)
+        {
+           // Control of the program move to jump:
+            goto jump;
+        } 
+        sum += num;
+    }
+    
+jump:
+    average = sum / (i - 1);
+    cout << "\nAverage = " << average;
+    return 0;
+}
+
+      𝙘𝙤𝙣𝙩𝙞𝙣𝙪𝙚 𝙨𝙩𝙖𝙩𝙚𝙢𝙖𝙣𝙩
+𝙚𝙭𝙖𝙢𝙥𝙡𝙚 1
+// program to print the value of i
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        // condition to continue
+        if (i == 3) {
+            continue;
+        }
+
+        cout << i << endl;
+    }
+
+    return 0;
+}
+𝙚𝙭𝙖𝙢𝙥𝙡𝙚 2
+for (int i = 0; i < 10; i++) {
+  if (i == 4) {
+    continue;
+  }
+  cout << i << "\n";
+}
+Example 3
+int i = 0;
+while (i < 10) {
+  if (i == 4) {
+    i++;
+    continue;
+  }
+  cout << i << "\n";
+  i++;
+}
+    𝙗𝙧𝙚𝙖𝙠 𝙨𝙩𝙖𝙩𝙚𝙢𝙚𝙣𝙩
+𝙚𝙭𝙖𝙢𝙥𝙡𝙚 1
+int i = 0;
+while (i < 10) {
+  cout << i << "\n";
+  i++;
+  if (i == 4) {
+    break;
+  }
+}
+Example 2
+#include <iostream>
+using namespace std;
+ 
+int main () {
+   // Local variable declaration:
+   int a = 10;
+
+   // do loop execution
+   do {
+      cout << "value of a: " << a << endl;
+      a = a + 1;
+      if( a > 15) {
+         // terminate the loop
+         break;
+      }
+   } while( a < 20 );
+ 
+   return 0;
+}
