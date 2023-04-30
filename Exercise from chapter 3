@@ -16,6 +16,23 @@ Answer
 if x=3 and y=2 output:x is 3
 if x=3 and y=4 output:z is 7
 if x=2 and y=2 no output
+Flow chart
+                          ( start )
+                          ____|___
+                        /    x>2  \
+             false _____\_________/_____true
+                  |                     |
+                  |                     |
+                  |                  ___|____
+                  |                 /   y>2   \
+                  |       false ___ \________/____ true
+                  |            |                 |              
+               ___|___         |                 |
+              [       ]        |               ___|___
+              [prnt x ]        |              | z=x+y |
+              [_______]        |               |print z|                        
+                  |            |              |_______|
+                  |________ ( end )________________|
 
        Quiz( group project )
 1) Write a program to accept any character from keyboard and 
