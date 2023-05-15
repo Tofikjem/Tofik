@@ -13,9 +13,9 @@ else	    cout << "x is " << x << endl;
 
 
 Answer 
-if x=3 and y=2 output:x is 3
+if x=3 and y=2 no out put
 if x=3 and y=4 output:z is 7
-if x=2 and y=2 no output
+if x=2 and y=2 output:x is 2
 Flow chart
                           ( start )
                           ____|___
@@ -105,6 +105,59 @@ if (num1 > num2)
 else { cout << num3 << " is the greatest number."; } 
 }
  return 0;}
+ 
+Write a program that accepts three numbers from the user and prints "increasing" if the numbers are in increasing order, "decreasing" if the numbers are in decreasing order and "Neither increasing nor decreasing order" otherwise.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+   float num1, num2, num3;
+   cout << "Enter first number: ";
+   cin >> num1;
+   cout << "Enter second number: ";
+   cin >> num2;
+   cout << "Enter third number: ";
+   cin >> num3;
+
+   if (num1 < num2 && num2 < num3) {
+      cout << "Increasing";
+   } else if (num1 > num2 && num2 > num3) {
+      cout << "Decreasing";
+   } else {
+      cout << "Neither increasing nor decreasing order";
+   }
+   return 0;
+}
+
+Write a program to calculate sum, average and check your grade status, if pass or fail.  Hint: accept at least three course marks then calculate the total, and average of your mark, the status will be based on average value. Display the total mark, average and status.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+   float mark1, mark2, mark3;
+   cout << "Enter first course mark: ";
+   cin >> mark1;
+   cout << "Enter second course mark: ";
+   cin >> mark2;
+   cout << "Enter third course mark: ";
+   cin >> mark3;
+
+   float total = mark1 + mark2 + mark3;
+   float average = total / 3;
+
+   cout << "Total marks: " << total << endl;
+   cout << "Average marks: " << average << endl;
+
+   if (average >= 50) {
+      cout << "Pass";
+   } else {
+      cout << "Fail";
+   }
+   return 0;
+}
+
 
 Quiz 2
 
