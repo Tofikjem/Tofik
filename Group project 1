@@ -247,3 +247,23 @@ int main() {
 
     return 0;
 }
+// Exercise 9
+/*
+Write a while loop that prints the average of numbers from 1 to 10
+*/
+#include <iostream>
+using namespace std;
+
+int main() {
+    int sum = 0;
+    int count = 0;
+    int num = 1;
+    while (num <= 10) {
+        sum += num;
+        count++;
+        num++;
+    }
+    double average = sum / static_cast<double>(count);
+    cout << "The average is: " << average << endl;
+    return 0;
+}
